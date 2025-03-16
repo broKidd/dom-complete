@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
+
+.totally-legit-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px 0 80px 0;
+}
+
+.totally-legit-form-container > div {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+}
+
+.totally-legit-form-container h1, 
+.totally-legit-form-container h2,
+.totally-legit-form-container h3  {
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+    display: none;
+}

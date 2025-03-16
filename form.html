@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <title>Totally Legit Co. - Where Trust is Everything</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                Totally Legit Co.
+            </div>
+        </a>
+        <nav>
+            <a href="#">Trustworthy</a>
+            <a href="#">Loyal</a>
+            <a href="#">Helpful</a>
+            <a href="#">Friendly</a>      
+        </nav>
+    </header>
+
+    <div class="totally-legit-form-container">
+        <div>
+            <h1>Congradulations! 🎉</h1>
+            <h2>You just won 1 BILLEON DOLLAR! 🤑</h2>
+            <h3>Let us know where to send! 💸</h3>
+            
+            <form id="honestMoneyForm">
+                <p class="success-message" id="submitSuccess">
+                    Form submitted successfully!  Bwahaha 😈<br/>
+                    We now have your 💵...<br/>
+                    Uhh... we mean you have just helped us save the 🌎
+                </p>
+
+                <div class="input-group">
+                    <label for="routingNumber">Routing Number</label>
+                    <input type="number" id="routingNumber" name="routingNumber">
+                    <p class="error-message" id="routingError">
+                        Routing number is required. Hurry!
+                    </p>
+                </div>
+
+                <div class="input-group">
+                    <label for="accountNumber">Bank Account Number</label>
+                    <input type="number" id="accountNumber" name="account-number">
+                    <p class="error-message" id="accountError">
+                        Account number is required. Be careful!
+                    </p>
+                </div>
+                <button type="submit" class="submit-btn">Submit 💰</button>
+            </form>
+        </div>
+    </div>
+    <hr/>
+
+    <footer>
+        <img src="images/logo.png" alt="Sloth Logo">
+        <span class="logo-text">Totally Legit Co.</span>
+        <span>
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+        </span>
+    </footer>
+
+    <script>
+        confetti({
+            particleCount: 1500,
+            spread: 360,
+            origin: { y: 0.5 } // Adjusts the position
+        });
+    </script>
+
+    <script src="scripts/moneyFormCheck.js"></script>
+
+</body>
+</html>

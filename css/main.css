@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
+
+/*
+font-family: "Charm", cursive;
+font-family: 'Roboto', sans-serif;
+font-family: "Style Script", cursive;
+*/
+*{
+    max-width:100%;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    height:70px;
+    background:white;
+    margin-bottom:20px;
+}
+header a{
+    text-decoration:none;
+}
+.logo{
+    font-family: "Style Script", cursive;
+    font-size:3rem;
+    color:black;
+    padding:10px 0px 0px 20px;
+    z-index:100000;
+    transition:.3s;
+}
+.logo:hover{
+    transform:translate(10px);
+    color:red;
+}
+nav{
+    display:flex;
+    width:40%;
+    height:90px;
+    justify-content: space-around;
+    align-items:center;
+}
+nav a{
+    font-family: "Charm", cursive;
+    color:black;    
+    font-size:1.50rem;
+    font-weight:bold;    
+    transition:.3s;
+}
+nav a:hover{
+    color:red;
+    transform: rotate(7deg);
+}
+.banner{
+    display:flex;
+    width:100%;
+    height:45vh;
+    background:url(../images/fistBump.jpg) no-repeat;
+    background-position:center;
+    background-size:cover;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.trust-us{
+    height:40vh;
+    width:100%;
+}
+.duties{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.7rem;
+    color:black;
+    margin:0 0 20px 20px;
+    padding-top:10px;
+}
+.duties div{
+    width:25%;
+    height:30vh;
+    border:5px white solid;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-position:center;
+    background-size:cover;
+}
+.duty1{
+    background:url(../images/trust.jpg) no-repeat;
+}
+.duty2{
+    background:url(../images/shakeHands.jpg) no-repeat;
+}
+.duty3{
+    background:url(../images/happy.jpg) no-repeat;
+}
+footer{
+    display:flex;
+    height:10vh;
+    width:100%;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.logo-text {
+    font-family: "Style Script", cursive;
+    font-size:2rem;
+    color:black;
+}
+footer img{
+    width:80px;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+}
+
+.trustworthy-form-link {    
+    width:700px;
+    padding:20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:-120px;
+    height:100px;
+    background:rgb(32, 162, 206);
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size:1.2rem;
+    font-weight:bold;
+    border: 3px white solid;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: 1.5s; 
+}
+
+.trustworthy-form-link a {
+    color:black;
+    text-decoration: none;
+}
+
+.trustworthy-form-link a:hover {
+    color:rgb(192, 36, 8);
+}
