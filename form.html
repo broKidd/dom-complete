@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="shortcut icon" href="images/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-
     <title>Totally Legit Co. - Where Trust is Everything</title>
 </head>
 <body>
@@ -17,7 +16,7 @@
                 Totally Legit Co.
             </div>
         </a>
-        <nav>
+        <nav aria-label="Main Navigation">
             <a href="#">Trustworthy</a>
             <a href="#">Loyal</a>
             <a href="#">Helpful</a>
@@ -40,7 +39,8 @@
 
                 <div class="input-group">
                     <label for="routingNumber">Routing Number</label>
-                    <input type="number" id="routingNumber" name="routingNumber">
+                    <input type="number" id="routingNumber" name="routingNumber" 
+                        aria-describedby="routingError">
                     <p class="error-message" id="routingError">
                         Routing number is required. Hurry!
                     </p>
@@ -48,7 +48,8 @@
 
                 <div class="input-group">
                     <label for="accountNumber">Bank Account Number</label>
-                    <input type="number" id="accountNumber" name="account-number">
+                    <input type="number" id="accountNumber" name="accountNumber" 
+                        aria-describedby="accountError">
                     <p class="error-message" id="accountError">
                         Account number is required. Be careful!
                     </p>
@@ -60,7 +61,7 @@
     <hr/>
 
     <footer>
-        <img src="images/logo.png" alt="Sloth Logo">
+        <img src="images/logo.png" alt="Totally Legit Co Logo">
         <span class="logo-text">Totally Legit Co.</span>
         <span>
             Copyright &copy;

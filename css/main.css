@@ -22,15 +22,15 @@ header{
 header a{
     text-decoration:none;
 }
-.logo{
+.logo a{
     font-family: "Style Script", cursive;
     font-size:3rem;
     color:black;
+    display: inline-block;
     padding:10px 0px 0px 20px;
-    z-index:100000;
     transition:.3s;
 }
-.logo:hover{
+.logo a:hover{
     transform:translate(10px);
     color:red;
 }
